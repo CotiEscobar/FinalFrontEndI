@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body {
+    background-image: url("/imagenes/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: right -20% top -10%;
+    margin: 0;
+}
+main {
+    background-image: url("/imagenes/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: left -70% bottom 30%;
+}
+/*estilos del header*/
+header {
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding: 15px;
+}
+.section.image {
+    display: flex;
+    justify-content: center;
+}
+.section.image img {
+    width: 90vw;
+}
+.header-list {
+    display: flex;
+    list-style: none;
+}
+.header-list li {
+    padding: 20px;
+}
+.header-list li:hover{
+    color: rgb(143, 148, 167);
+}
+/*estilos de las secciones*/
+.section {
+    color: rgb(35, 44, 81);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    width: 400px;
+    margin-top: 30px;
+}
+.section h1 {
+    font-size: 40px;
+    margin: 0;
+}
+.section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgb(143, 148, 167);
+}
+.section.dos h2 {
+    margin: 0;
+    font-size: 30px;
+}
+/*estilos del boton*/
+.btn {
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: transparent;
+    font-size: 14px;
+    font-family: 'Be Vietnam Pro', sans-serif
+}
+
+.btn-primary {
+    background-color: rgb(242, 95, 58);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: rgb(242, 95, 58);
+}
+
+.shadow-primary {
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+}
+
+.shadow-secondary {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/*estilos de la seccion de lista */
+.section-list {
+    width: 400px;
+    margin-top: 30px;
+}
+.title-list {
+    background-color:rgb(255, 239, 234);
+    font-weight: 700;
+    color: rgb(35, 44, 81);
+    padding: 10px 0px 10px 0px;
+    border-radius: 20px 0px 0px 20px;
+    text-align: start;
+    margin-left: 10px;
+}
+.title-list span {
+    background-color: #F3603B;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+}
+.section-list p {
+    color: rgb(143, 148, 167);
+    margin-left: 10px;
+    line-height: 1.8;
+}
+/*estilos seccion de avatars*/
+.section.people-avatar h2 {
+    margin: 50px;
+}
+.section.people-avatar .cards {
+    background-color: rgb(249, 249, 249);
+    position: relative;
+    padding: 50px 10px 30px 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 400px;
+}
+.cards img {
+    width: 100px;
+    position: absolute;
+    top: -50px;
+    left: 150px;
+}
+.section.people-avatar button {
+    margin-top:30px
+}
+#icono {
+    color: #F3603B;
+}
+/*estilos de la seccion final*/
+.section.simplify {
+    background-color: #F3603B;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin-top: 70px;
+    width: 400px;
+}
+.section.simplify h2{
+    color: white;
+    font-size: 40px;
+}
+.section.simplify button {
+    background-color: white;
+    color: #F3603B;
+    margin-bottom: 30px;
+}
+.section.simplify button:hover {
+    opacity: 0.9;
+}
+/*estilos del footer*/
+.footer-section-container {
+    background-color:#1E1E26;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-section-container .footer-nav {
+    width: 80vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer-nav ul li {
+    padding: 10px;
+}
+.footer-nav ul li:hover {
+    color: #F3603B;
+}
+.social-logo-container {
+    height: 150px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-icons .fab {
+    padding: 10px;
+    color: white;
+}
+.social-icons .fab:hover {
+    color: rgb(242, 95, 58);
+}
+/*estilos del formulario del footer*/
+.footer-form {
+    display: flex;
+    margin-top: 20px;
+}
+.footer-form input {
+    border-radius: 30px;
+    padding: 20px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 375px) {
+    .header-list {
+        display: none;
+    }
+    .header-container button {
+        display: none;
+    }
+    /*avatars*/
+    #richard, #anisha {
+        display: none;
+    }
+    .footer-section-container {
+        width: 400px;
+    }
+    .footer-section-container::before {
+        content: "Copyright 2020. All Rights Reserved";
+        color: rgb(143, 148, 167);
+        padding: 15px;
+    }
+    .form-copyright-container p {
+        display: none;
+    }
+}
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+    .menu {
+        display: none;
+    }
+    .section-container-top{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    .section.uno, .section.dos {
+        width: 400px;
+        text-align: start;
+    }
+    .section-list, .section.image img {
+        width: 400px;
+    }
+   .section-container-bottom {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       margin-top: 100px;
+    }
+    .section-list .title-list {
+       background-color: transparent
+    }
+    /*seccion tres de avatars*/
+    .section.people-avatar {
+       width: 100%;
+    }
+    .cards-container {
+       display: flex;
+       flex-direction: row;
+    }
+   .cards {
+       margin: 10px;
+    }
+    #anisha {
+        order: -1;
+    }
+    #icono {
+        display: none;
+    }
+    /*seccion final*/
+    .section.simplify {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .section.simplify h2 {
+        width: 500px;
+        text-align: start;
+    }
+    /*estilos del footer*/
+    .footer-section-container {
+        height: 250px ;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+    .footer-section-container .social-logo-container {
+        width: 25vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column
+    }
+    .footer-logo {
+        margin-top: 10px;
+    }
+    .footer-section-container .footer-nav {
+        width: 25vw;
+    }
+    /*estilos del formulario del footer*/
+    .footer-section-container .footer-form {
+        width: 25vw;
+    }
+    .footer-form input {
+        margin-right: 10px;
+    }
+    .form-copyright-container p {
+        text-align: center;
+        color:rgb(143, 148, 167);
+        font-size: 14px;
+    }
+}
